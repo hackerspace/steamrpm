@@ -1,0 +1,19 @@
+#!/bin/bash -ex
+
+
+echo "Download original sources and create new tarball required for building rpms"
+
+tmpdir=$( mktemp -d )
+
+pushd ${tmpdir}
+
+wget http://media.steampowered.com/client/installer/steam.deb -O steam.deb
+ar vx steam.deb
+tar xzvf control.tar.gz
+ver=$( grep Version control | cut -d' ' -f2 )
+
+popd
+
+mv ${tmpdir}/data.tar.gz steam-${ver}-binary.tar.gz
+
+rm -rf ${tmpdir}
