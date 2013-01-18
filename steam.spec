@@ -25,6 +25,7 @@ Source0:        steam-%{version}-binary.tar.gz
 Source1:        STEAM-LICENSE.txt
 # needed to prevent the steam script from trying to apt-get things
 Patch0:         desktop_file.patch
+BuildRequires:  dos2unix
 %if 0%{?suse_version}
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  update-desktop-files
@@ -139,6 +140,7 @@ savegame and screenshot functionality, and many social features.
 
 %prep
 %setup -q -c %{name}-%{version}
+dos2unix usr/share/applications/steam.desktop
 %patch0 -p1
 cp %{SOURCE1} .
 
