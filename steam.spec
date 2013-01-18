@@ -20,7 +20,7 @@ Url:            http://www.steampowered.com/
 Group:          Amusements/Games/Other
 # taken from http://media.steampowered.com/client/installer/steam.deb
 # and repackaged using ar vx steam.deb
-Source0:        steam-%{version}-binary.tar.gz
+Source0:        http://sources.48.io/steam/steam-%{version}-binary.tar.gz
 # also taken from the deb Description field
 Source1:        STEAM-LICENSE.txt
 Patch0:         desktop_file.patch
