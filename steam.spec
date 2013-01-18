@@ -19,11 +19,10 @@ Summary:        Installer for Valve's digital software distribution service
 Url:            http://www.steampowered.com/
 Group:          Amusements/Games/Other
 # taken from http://media.steampowered.com/client/installer/steam.deb
-# and repackaged using dpkg -x *.deb .
+# and repackaged using ar vx steam.deb
 Source0:        steam-%{version}-binary.tar.gz
 # also taken from the deb Description field
 Source1:        STEAM-LICENSE.txt
-# needed to prevent the steam script from trying to apt-get things
 Patch0:         desktop_file.patch
 BuildRequires:  dos2unix
 %if 0%{?suse_version}
