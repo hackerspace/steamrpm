@@ -19,7 +19,7 @@ Fedora
         # clone this repo
         git clone git://github.com/sorki/steamrpm.git && cd steamrpm
 
-        # downloads steam-$version-binary.tar.gz from http://sources.48.io/steam/ (use fetch_sources to download and repack the original .deb archive)
+        # downloads steam-$version-binary.tar.gz from http://sources.48.io/steam/ (or use fetch_sources to download and repack the original .deb archive)
         spectool -g -s 0 steam.spec
 
         # move stuff to right directories
