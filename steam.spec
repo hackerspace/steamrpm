@@ -12,7 +12,7 @@
 #
 
 Name:           steam
-Version:        1.0.0.18
+Version:        1.0.0.21
 Release:        1
 License:        Steam License Agreement
 Summary:        Installer for Valve's digital software distribution service
@@ -24,7 +24,7 @@ Source0:        steam-%{version}-binary.tar.gz
 # also taken from the deb Description field
 Source1:        STEAM-LICENSE.txt
 # needed to prevent the steam script from trying to apt-get things
-Patch0:         steam.patch
+Patch0:         desktop_file.patch
 %if 0%{?suse_version}
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  update-desktop-files
@@ -147,6 +147,7 @@ cp %{SOURCE1} .
 
 %install
 mkdir -p %{buildroot}
+rm usr/bin/steamdeps
 cp -a usr %{buildroot}/
 
 %if 0%{?fedora}
@@ -200,6 +201,10 @@ fi
 %{_mandir}/man6/steam.*
 
 %changelog
+* Fri Jan 18 2013 rissko@gmail.com - 1.0.0.21-1
+
+- updated to 1.0.0.21
+
 * Fri Dec 21 2012 prusnak@opensuse.org - 1.0.0.18-1
 
 - updated to 1.0.0.18
