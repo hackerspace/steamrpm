@@ -12,7 +12,7 @@
 #
 
 Name:           steam
-Version:        1.0.0.21
+Version:        1.0.0.22
 Release:        1
 License:        Steam License Agreement
 Summary:        Installer for Valve's digital software distribution service
@@ -202,6 +202,10 @@ fi
 %{_mandir}/man6/steam.*
 
 %changelog
+* Tue Jan 22 2013 rissko@gmail.com - 1.0.0.22-1
+
+- updated to 1.0.0.22
+
 * Fri Jan 18 2013 rissko@gmail.com - 1.0.0.21-1
 
 - updated to 1.0.0.21
