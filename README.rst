@@ -17,7 +17,7 @@ Fedora
         sudo yum -y install rpm-build rpmdevtools
 
         # clone this repo
-        git clone git://github.com/sorki/steamrpm.git && cd steamrpm
+        git clone git://github.com/hackerspace/steamrpm.git && cd steamrpm
 
         # downloads steam-$version-binary.tar.gz from http://sources.48.io/steam/ (or use fetch_sources to download and repack the original .deb archive)
         spectool -g -s 0 steam.spec
@@ -25,7 +25,7 @@ Fedora
         # move stuff to right directories
         mkdir -p ~/rpmbuild/SOURCES/
         cp *.patch ~/rpmbuild/SOURCES/
-        cp STEAM-LICENSE ~/rpmbuild/SORUCES/
+        cp STEAM-LICENSE.txt ~/rpmbuild/SOURCES/
         cp steam-*-binary.tar.gz ~/rpmbuild/SOURCES/
 
         # build the package
