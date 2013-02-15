@@ -12,7 +12,7 @@
 #
 
 Name:           steam
-Version:        1.0.0.22
+Version:        1.0.0.27
 Release:        1
 License:        Steam License Agreement
 Summary:        Installer for Valve's digital software distribution service
@@ -196,12 +196,17 @@ fi
 %{_bindir}/steam
 %{_prefix}/lib/steam
 %{_datadir}/pixmaps/steam.png
+%{_datadir}/pixmaps/steam_tray.png
 %{_datadir}/applications/steam.desktop
 %{_datadir}/icons/hicolor/*/apps/steam.png
 %doc %{_datadir}/doc/steam/
 %{_mandir}/man6/steam.*
 
 %changelog
+* Fri Feb 15 2013 rissko@gmail.com - 1.0.0.27-1
+
+- updated to 1.0.0.27
+
 * Tue Jan 22 2013 rissko@gmail.com - 1.0.0.22-1
 
 - updated to 1.0.0.22
