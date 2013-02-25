@@ -12,7 +12,7 @@
 #
 
 Name:           steam
-Version:        1.0.0.28
+Version:        1.0.0.34
 Release:        1
 License:        Steam License Agreement
 Summary:        Installer for Valve's digital software distribution service
@@ -200,9 +200,14 @@ fi
 %{_datadir}/applications/steam.desktop
 %{_datadir}/icons/hicolor/*/apps/steam.png
 %doc %{_datadir}/doc/steam/
+%doc %{_datadir}/doc/steam-launcher/
 %{_mandir}/man6/steam.*
 
 %changelog
+* Mon Feb 18 2013 rissko@gmail.com - 1.0.0.34-1
+
+- updated to 1.0.0.34
+
 * Mon Feb 18 2013 rissko@gmail.com - 1.0.0.28-1
 
 - updated to 1.0.0.28
