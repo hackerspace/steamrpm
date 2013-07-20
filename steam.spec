@@ -12,7 +12,7 @@
 #
 
 Name:           steam
-Version:        1.0.0.34
+Version:        1.0.0.39
 Release:        1
 License:        Steam License Agreement
 Summary:        Installer for Valve's digital software distribution service
@@ -196,7 +196,7 @@ fi
 %{_bindir}/steam
 %{_prefix}/lib/steam
 %{_datadir}/pixmaps/steam.png
-%{_datadir}/pixmaps/steam_tray.png
+%{_datadir}/pixmaps/steam_tray_mono.png
 %{_datadir}/applications/steam.desktop
 %{_datadir}/icons/hicolor/*/apps/steam.png
 %doc %{_datadir}/doc/steam/
@@ -204,6 +204,10 @@ fi
 %{_mandir}/man6/steam.*
 
 %changelog
+* Sun Jul 20 2013 rmako@fedoraproject.org - 1.0.0.39-1
+
+- updated to 1.0.0.39
+
 * Mon Feb 18 2013 rmako@fedoraproject.org - 1.0.0.34-1
 
 - updated to 1.0.0.34
