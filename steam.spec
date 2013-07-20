@@ -204,23 +204,23 @@ fi
 %{_mandir}/man6/steam.*
 
 %changelog
-* Mon Feb 18 2013 rissko@gmail.com - 1.0.0.34-1
+* Mon Feb 18 2013 rmako@fedoraproject.org - 1.0.0.34-1
 
 - updated to 1.0.0.34
 
-* Mon Feb 18 2013 rissko@gmail.com - 1.0.0.28-1
+* Mon Feb 18 2013 rmako@fedoraproject.org - 1.0.0.28-1
 
 - updated to 1.0.0.28
 
-* Fri Feb 15 2013 rissko@gmail.com - 1.0.0.27-1
+* Fri Feb 15 2013 rmako@fedoraproject.org - 1.0.0.27-1
 
 - updated to 1.0.0.27
 
-* Tue Jan 22 2013 rissko@gmail.com - 1.0.0.22-1
+* Tue Jan 22 2013 rmako@fedoraproject.org - 1.0.0.22-1
 
 - updated to 1.0.0.22
 
-* Fri Jan 18 2013 rissko@gmail.com - 1.0.0.21-1
+* Fri Jan 18 2013 rmako@fedoraproject.org - 1.0.0.21-1
 
 - updated to 1.0.0.21
 
